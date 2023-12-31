@@ -1,0 +1,106 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Root Variables */
+:root {
+    /* Color Palette */
+    --light-blue: #DAE8FC;
+    --medium-blue: #6DA1F3;
+    --dark-blue: #4A89F0;
+    --light-orange: #FFCCB3;
+    --medium-orange: #FF9966;
+    --light-gray: #F5F5F5;
+    --dark-gray: #808080;
+    --accent-green: #82E0AA;
+    --background-light-blue: #F0F8FF;
+    --text-dark: #333333;
+
+    /* Theme Colors */
+    --primary-color: #2193b0;
+    --secondary-color: #6dd5ed;
+    --background-gradient: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    --content-bg-color: rgba(255, 255, 255, 0.8);
+    --header-footer-bg-color: rgba(0, 0, 0, 0.7);
+
+    /* Replaceable Font Section */
+    --font-primary: 'Roboto Slab', serif;
+    --font-size-normal: 1rem; /* 16px */
+    --font-size-large: 1.25rem; /* 20px */
+    --line-height-normal: 1.6;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: var(--background-gradient);
+    color: var(--text-dark);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* ... responsive styles ... */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Semi-bold */
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+    line-height: 1.25;a
+}
+
+h2 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.3;
+}
+
+/* ... similarly for h3, h4, h5, h6 ... */
+
+.language-switcher button {
+    font-size: var(--font-size-large);
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.language-switcher {
+    text-align: center;
+    margin: 10px;
+}
+
+header {
+    background-color: var(--medium-blue);
+    color: var(--light-gray);
+}
+
+#main-content {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: var(--content-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--header-footer-bg-color);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    body, header, footer {
+        text-align: left;
+        padding: 0 10px;
+    }
+}
